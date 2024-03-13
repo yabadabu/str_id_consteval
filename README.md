@@ -6,7 +6,7 @@ This is a header-only C++ 20 consteval version of the MurmurHash32 algorithm jus
 
 and ensuring the conversion from str to unsigned is performed during the **compilation**, not at runtime.
 
-The code has been copied from the original code at https://github.com/aappleby/smhasher, I just made a standalone version of the 32bits
+The code has been adapted from the original code 32bits version at https://github.com/aappleby/smhasher, I just made a self-contained consteval version.
 
 I normally use strings for identifications, but when comparing, searching or using as keys of containers, I convert them to uint32_t and the mapping is done using the MurmurHash32 algorithm.
 
