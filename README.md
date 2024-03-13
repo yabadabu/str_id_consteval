@@ -2,7 +2,9 @@
 
 This is a header-only C++ 20 consteval version of the MurmurHash32 algorithm just for strings (const char*) providing the following function:
 
-	consteval uint32_t strID(const char* str);
+``` C++
+consteval uint32_t strID(const char* str);
+```
 
 and ensuring the conversion from str to unsigned is performed during the **compilation**, not at runtime.
 
