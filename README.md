@@ -8,7 +8,7 @@ and ensuring the conversion from str to unsigned is performed during the **compi
 
 The code has been adapted from the original code 32bits version at https://github.com/aappleby/smhasher, I just made a self-contained consteval version.
 
-I normally use strings for identifications, but when comparing, searching or using as keys of containers, I convert them to uint32_t and the mapping is done using the MurmurHash32 algorithm.
+I normally use strings for identifications, but when comparing, searching or using as keys of containers, I convert them to uint32_t and the mapping is done using the MurmurHash32 algorithm. Remember the mapping from const char* to uint32_t is **not** unique and there is a non-zero possibility to have collisions.
 
 ``` C++
 
